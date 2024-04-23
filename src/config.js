@@ -1,10 +1,10 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'IndiaTraders',
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://indiaTraders.co.kr',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'IndiaTraders',
+  description: 'IndiaTraders, India, Korea, Trade, Export, Import, 한국, 인도, 인디아, 무역, ODC, 수출, 수입',
 };

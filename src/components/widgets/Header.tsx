@@ -76,7 +76,7 @@ const Header = () => {
           } w-auto overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible`}
           aria-label="Main navigation"
         >
-          <ul className="flex w-full flex-col pt-8 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
+          {/* <ul className="flex w-full flex-col pt-8 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
             {links &&
               links.map(({ label, href, icon: Icon, links }, index) => (
                 <li key={`item-link-${index}`} className={links?.length ? 'dropdown' : ''}>
@@ -119,7 +119,7 @@ const Header = () => {
                   )}
                 </li>
               ))}
-          </ul>
+          </ul> */}
         </nav>
         <div
           className={`${
@@ -137,7 +137,7 @@ const Header = () => {
                 <IconRss className="h-5 w-5" />
               </Link>
             )}
-            {actions && actions.length > 0 && (
+            {/* {actions && actions.length > 0 && (
               <div className="ml-4 flex w-max flex-wrap justify-end">
                 {actions.map((callToAction, index) => (
                   <CTA
@@ -147,7 +147,7 @@ const Header = () => {
                   />
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

@@ -9,7 +9,15 @@ const Contact = ({ header, content, items, form, id, hasBackground = false }: Co
     <div className="flex items-stretch justify-center">
       <div className={`grid ${!content && !items ? 'md:grid-cols-1' : 'md:grid-cols-2'}`}>
         <div className="h-full pr-6">
-          {content && <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</p>}
+          {content &&
+            (content.indexOf('|') ? (
+              <>
+                <p className="mt-3 mb-5 text-lg text-gray-600 dark:text-slate-400">{content.split('|')[0]}</p>{' '}
+                <p className="mt-3 mb-20 text-sm text-gray-600 dark:text-slate-400">{content.split('|')[1]}</p>
+              </>
+            ) : (
+              <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</p>
+            ))}
           <ul className="mb-6 md:mb-0">
             {items &&
               items.map(({ title, description, icon: Icon }, index) => (

@@ -14,6 +14,8 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconKeyboard,
+  IconMeat,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -28,7 +30,8 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.jpg';
+// import heroImg from '~/assets/images/hero.jpg';
+import mainImg from '~/assets/images/mainImg.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
@@ -41,34 +44,37 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      {/* Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
+      <span className="sm:whitespace-nowrap">Tailwind CSS</span> */}
+      인도와 한국을 잇는 다리, <span className="hidden md:inline">혁신적인 플랫폼을 경험해보세요.</span>{' '}
+      <span>새로운 가능성을 여는 창입니다.</span>
     </>
   ),
   subtitle: (
     <>
-      <span className="hidden md:inline">
+      {/* <span className="hidden md:inline">
         <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
           TailNext
         </span>{' '}
         is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
       </span>{' '}
       It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
+      optimization. */}
+      원자재, 식재료, ODC(Overseas Development Center) 등 필요한 무엇이든 문의 주세요.
     </>
   ),
-  callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
-  },
-  callToAction2: {
-    text: 'Learn more',
-    href: '/',
-  },
+  // callToAction: {
+  //   text: 'Get template',
+  //   href: 'https://github.com/onwidget/tailnext',
+  //   icon: IconDownload,
+  //   targetBlank: true,
+  // },
+  // callToAction2: {
+  //   text: 'Learn more',
+  //   href: '/',
+  // },
   image: {
-    src: heroImg,
+    src: mainImg,
     alt: 'Hero TailNext',
   },
 };
@@ -109,74 +115,72 @@ export const featuresHome: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        What you get with <span className="whitespace-nowrap">India Traders</span>
       </>
     ),
     subtitle:
-      "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
+      '인도에는 모든 것이 있습니다. 원자재, 식자재 등의 수입에서 ODC(Overseas Development Center) 에 이르기까지 India Traders의 핵심 강점에서 발산되는 시너지 효과를 확인하십시오.',
     tagline: 'Features',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Ready-to-use Components',
-      description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Best Practices',
-      description:
-        'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
-      icon: IconListCheck,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Excellent Page Speed',
-      description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-      icon: IconRocket,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
+      title: '무역',
+      description: '가죽, 섬유 등 필요한 무엇이든 문의 주세요.',
       icon: IconArrowsRightLeft,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
+      // callToAction: {
+      //   text: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Open to new ideas and contributions',
-      description:
-        'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
-      icon: IconBulb,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
+      title: '식자재',
+      description: '향신료, 민물새우, 닭발 등 다양한 식자재를 합리적인 가격에 제공합니다.',
+      icon: IconMeat,
+      // callToAction: {
+      //   text: 'Discover now',
+      //   href: '/',
+      // },
     },
+    {
+      title: 'ODC',
+      description:
+        '훌륭한 개발스킬과 합리적인 인건비를 통해 완성도 높은 결과물을 선보입니다. (모바일 앱, 전자상거래, 블로그, 개인 프로필, 스몰 비즈니스...)',
+      icon: IconKeyboard,
+      // callToAction: {
+      //   text: 'Discover now',
+      //   href: '/',
+      // },
+    },
+    // {
+    //   title: 'Excellent Page Speed',
+    //   description:
+    //     'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+    //   icon: IconRocket,
+    //   callToAction: {
+    //     text: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
+    // {
+    //   title: 'Search Engine Optimization (SEO)',
+    //   description:
+    //     "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
+    //   icon: IconArrowsRightLeft,
+    //   callToAction: {
+    //     text: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
+    // {
+    //   title: 'Open to new ideas and contributions',
+    //   description:
+    //     'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
+    //   icon: IconBulb,
+    //   callToAction: {
+    //     text: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
   ],
 };
 
@@ -366,10 +370,10 @@ export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
   hasBackground: false,
   header: {
-    title: 'Frequently Asked Questions',
-    subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
-    tagline: 'FAQS',
+    title: 'Questions And Answers',
+    // subtitle:
+    //   'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+    tagline: 'Q & A',
   },
   items: [
     {
@@ -608,25 +612,24 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: '무엇이든 문의 주십시오.',
     tagline: 'Contact',
   },
-  content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+  content: 'Empower your vision, partner with us today.|(입력하신 정보는 요청을 처리하는 데만 사용됩니다.)',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: '주소',
+      description: ['Magnum Tower 1, Sector 58, Gurugram', 'Haryana, India'],
       icon: IconMapPin,
     },
+    // {
+    //   title: 'Contact',
+    //   description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+    //   icon: IconPhoneCall,
+    // },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
-      icon: IconPhoneCall,
-    },
-    {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: '업무시간',
+      description: ['Monday - Sunday', '24 Hours'],
       icon: IconClock,
     },
   ],
@@ -642,8 +645,20 @@ export const contactHome: ContactProps = {
       {
         type: 'email',
         name: 'email',
-        autocomplete: 'on',
+        autocomplete: 'off',
         placeholder: 'Your email address',
+      },
+      {
+        type: 'phone',
+        name: 'phone',
+        autocomplete: 'off',
+        placeholder: 'Your phobne number',
+      },
+      {
+        type: 'password',
+        name: 'password',
+        autocomplete: 'off',
+        placeholder: 'Your password',
       },
     ],
     textarea: {
@@ -653,7 +668,7 @@ export const contactHome: ContactProps = {
       placeholder: 'Write your message...',
     },
     btn: {
-      title: 'Send Message',
+      title: '저장',
       type: 'submit',
     },
   },
