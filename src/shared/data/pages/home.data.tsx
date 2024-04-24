@@ -60,7 +60,7 @@ export const heroHome: HeroProps = {
       </span>{' '}
       It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
       optimization. */}
-      원자재, 식재료, ODC(Overseas Development Center) 등 필요한 무엇이든 문의 주세요.
+      원자재, 식재료, ODC(Offshore Development Center) 등 필요한 무엇이든 문의 주세요.
     </>
   ),
   // callToAction: {
@@ -119,7 +119,7 @@ export const featuresHome: FeaturesProps = {
       </>
     ),
     subtitle:
-      '인도에는 모든 것이 있습니다. 원자재, 식자재 등의 수입에서 ODC(Overseas Development Center) 에 이르기까지 India Traders의 핵심 강점에서 발산되는 시너지 효과를 확인하십시오.',
+      '인도에는 모든 것이 있습니다. 원자재, 식자재 등의 수입에서 ODC(Offshore Development Center) 에 이르기까지 India Traders의 핵심 강점에서 발산되는 시너지 효과를 확인하십시오.',
     tagline: 'Features',
   },
   items: [
@@ -370,35 +370,35 @@ export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
   hasBackground: false,
   header: {
-    title: 'Questions And Answers',
+    title: 'Frequently Asked Questions',
     // subtitle:
     //   'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
-    tagline: 'Q & A',
+    tagline: 'FAQS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: '어떤 물건을 구할 수 있나요?',
+      description: `인도에서 구할 수 있는 모든것을 취급합니다.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'ODC 가 무엇인가요?',
+      description: `ODC 는 Offshore Development Center 의 약자로 해외 개발 센터를 의미합니다. 인도의 훌륭한 개발자와 함께 합리적인 가격에 제품 개발 및 유지보수를 제공합니다.`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: '질문?',
+      description: `답변.`,
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: '질문?',
+      description: `답변.`,
     },
     {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: '질문?',
+      description: `답변.`,
     },
     {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: '질문?',
+      description: `답변.`,
     },
   ],
 };
@@ -622,11 +622,11 @@ export const contactHome: ContactProps = {
       description: ['Magnum Tower 1, Sector 58, Gurugram', 'Haryana, India'],
       icon: IconMapPin,
     },
-    // {
-    //   title: 'Contact',
-    //   description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
-    //   icon: IconPhoneCall,
-    // },
+    {
+      title: '이메일',
+      description: ['Mail: koreahn@streettechbros.com'],
+      icon: IconPhoneCall,
+    },
     {
       title: '업무시간',
       description: ['Monday - Sunday', '24 Hours'],
@@ -640,35 +640,41 @@ export const contactHome: ContactProps = {
         type: 'text',
         name: 'name',
         autocomplete: 'off',
-        placeholder: 'Your name',
+        placeholder: '이름을 입력하세요.',
       },
       {
         type: 'email',
         name: 'email',
         autocomplete: 'off',
-        placeholder: 'Your email address',
+        placeholder: 'e-mail 을 입력하세요.',
       },
       {
-        type: 'phone',
+        type: 'tel',
         name: 'phone',
         autocomplete: 'off',
-        placeholder: 'Your phobne number',
+        placeholder: '전화번호를 입력하세요.(- 없이 숫자만)',
       },
-      {
-        type: 'password',
-        name: 'password',
-        autocomplete: 'off',
-        placeholder: 'Your password',
-      },
+      // {
+      //   type: 'password',
+      //   name: 'password',
+      //   autocomplete: 'off',
+      //   placeholder: '비밀번호를 입력하세요.',
+      // },
+      // {
+      //   type: 'text',
+      //   name: 'title',
+      //   autocomplete: 'off',
+      //   placeholder: '제목을 입력하세요.',
+      // },
     ],
     textarea: {
       cols: 30,
       rows: 5,
-      name: 'textarea',
-      placeholder: 'Write your message...',
+      name: 'content',
+      placeholder: '내용을 입력하세요.',
     },
     btn: {
-      title: '저장',
+      title: '문의하기',
       type: 'submit',
     },
   },
