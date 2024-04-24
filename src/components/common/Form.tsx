@@ -69,13 +69,6 @@ const Form = ({
       return;
     }
 
-    // const templateParams = {
-    //   name: name,
-    //   email: email,
-    //   phone: phone,
-    //   content: content,
-    // };
-
     if (
       process.env.NEXT_PUBLIC_SERVICE_KEY &&
       process.env.NEXT_PUBLIC_TEMPLATE_ID &&
