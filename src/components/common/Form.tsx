@@ -61,7 +61,7 @@ const Form = ({
     const phone = formData.get('phone') as string | null;
     const content = formData.get('content') as string | null;
 
-    const res = checkValidation(name, email, phone, title, content);
+    const res = checkValidation(name, email, phone, content);
 
     if (res !== '') {
       const notValidObj = document.getElementById(res) as HTMLInputElement;
