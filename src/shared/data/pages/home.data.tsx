@@ -44,10 +44,11 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      {/* Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span> */}
-      인도와 한국을 잇는 다리, <span className="hidden md:inline">혁신적인 플랫폼을 경험해보세요.</span>{' '}
-      <span>새로운 가능성을 여는 창입니다.</span>
+      <span className="block mb-5">인도로부터 저렴한 가격으로 원자재 및 식재료 수입</span>{' '}
+      <span className="block mb-5">인도로 경쟁력있는 원자재 또는 완성품 수출</span>{' '}
+      <span className="sm:whitespace-nowrap mb-5">인디아트레이더스와 함께 인도를 만나보세요</span>
+      {/* 인도와 한국을 잇는 다리, <span className="hidden md:inline">혁신적인 플랫폼을 경험해보세요.</span>{' '}
+      <span>새로운 가능성을 여는 창입니다.</span> */}
     </>
   ),
   subtitle: (
@@ -119,14 +120,14 @@ export const featuresHome: FeaturesProps = {
       </>
     ),
     subtitle:
-      '인도에는 모든 것이 있습니다. 원자재, 식자재 등의 수입에서 ODC(Offshore Development Center) 에 이르기까지 India Traders의 핵심 강점에서 발산되는 시너지 효과를 확인하십시오.',
+      '인도에는 모든 것이 있습니다. 원자재, 식재료 등의 수입에서 ODC(Offshore Development Center) 에 이르기까지 India Traders의 핵심 강점에서 발산되는 시너지 효과를 확인하십시오.',
     tagline: 'Features',
   },
   items: [
     {
       title: '무역: 수출입',
       description:
-        '수출수입제한 품목을 제외한 모든 물건에 대해 취급가능합니다.<br />대한민국처럼 3면이 바다로 둘러쌓여 랍스타, 타이거새우, 갑오징어, 넙치 등 기타 수산물이 풍부하며, 우리에게 잘 알려진 식재료인 커리를 포함한 각종 향신료 등이 풍부합니다.',
+        '수출/수입 제한 품목을 제외한 모든 물건에 대해 취급가능합니다.<br />대한민국처럼 3면이 바다로 둘러쌓여 랍스타, 타이거새우, 갑오징어, 넙치 등 기타 수산물이 풍부하며, 우리에게 잘 알려진 식재료인 커리를 포함한 각종 향신료 등이 풍부합니다.',
       icon: IconArrowsRightLeft,
       // callToAction: {
       //   text: 'Discover now',
@@ -145,7 +146,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'ODC: IT 개발 아웃소싱',
       description:
-        '합리적인 인건비로 뛰어난 개발자들과 함께 만족도 와 완성도 높은 제품을 만들어 보세요.<br />(특히 한국을 비롯한 세계를 무대로 하는 앱서비스 등의 최초 개발부터 유지보수까지 가장 합리적인 가격으로 가능. 아웃소싱 및 해외지점설립등 지원가능)',
+        '합리적인 인건비로 뛰어난 개발자들과 함께 만족도와 완성도 높은 제품을 만들어 보세요.<br />(특히 한국을 비롯한 세계를 무대로 하는 앱서비스 등의 최초 개발부터 유지보수까지 가장 합리적인 가격으로 가능. 아웃소싱 및 해외지점설립등 지원가능)',
       icon: IconKeyboard,
       // callToAction: {
       //   text: 'Discover now',
@@ -378,8 +379,8 @@ export const faqs2Home: FAQsProps = {
   },
   items: [
     {
-      title: '수출수입이 가능한 물건을 확인할 수 있나요?',
-      description: `예. 아래 문의를 통해 품목정보를 보내주시면, 수출입가능여부 및 CIF & FOB 시장평균 가격을 알려드립니다. 가장 궁금해하시는 가격정보를 가장 빨리 얻으실 수 있어 의사결정이 빨라집니다.`,
+      title: '수출/수입이 가능한 물건을 확인할 수 있나요?',
+      description: `예. 아래 문의를 통해 품목정보를 보내주시면, 수출입 가능 여부 및 CIF & FOB 시장 평균 가격을 알려드립니다. 가장 궁금해하시는 가격정보를 가장 빨리 얻으실 수 있어 의사결정이 빨라집니다.`,
     },
     {
       title: '물건을 수입하는 경우 샘플을 먼저 받아 볼 수 있나요?',
@@ -387,7 +388,7 @@ export const faqs2Home: FAQsProps = {
     },
     {
       title: 'IT개발 아웃소싱이 궁금합니다.',
-      description: `저희는 인도에 풍부한 IT개발리소스를 통해 다양한 국가로부터 IT개발 아웃소싱을 받아 제공한 경험이 있습니다. 신규제품 개발부터 유지보수까지 다양한 형태로의 아웃소싱이 가능하며, 한국대비 굉징하 저렴한 가격으로 이 모든것이 가능합니다. 문의 주시면 상담드리겠습니다.`,
+      description: `저희는 인도에 풍부한 IT개발 리소스를 통해 다양한 국가로부터 IT개발 아웃소싱을 받아 제공한 경험이 있습니다. 신규제품 개발부터 유지보수까지 다양한 형태로의 아웃소싱이 가능하며, 한국대비 굉장히 저렴한 가격으로 이 모든것이 가능합니다. 문의 주시면 상담드리겠습니다.`,
     },
     // {
     //   title: '질문?',

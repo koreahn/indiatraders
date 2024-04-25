@@ -6,12 +6,14 @@ import ItemGrid from '../common/ItemGrid';
 const Features = ({ id, header, items, columns = 2, hasBackground = false }: FeaturesProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="scroll-mt-16 max-w-6xl">
     {header && <Headline header={header} titleClass="text-4xl md:text-5xl" />}
-    <div>
-      <p className="mt-2 mb-1 text-lg text-primary-600 dark:text-primary-200">
-        수입하고 싶은 품목을 알려주세요. 견적을 쉽게 알려드립니다.
+    <div className="text-center">
+      <p className="mt-2 mb-1 text-lg font-bold text-primary-500 dark:text-primary-200">
+        <span className="text-primary-600 dark:text-primary-200 text-2xl">수입</span>하고 싶은 품목을 알려주세요.{' '}
+        <span className="text-primary-600 dark:text-primary-200 text-2xl">견적</span>을 쉽게 알려드립니다.
       </p>
-      <p className="mt-1 mb-12 text-lg text-primary-600 dark:text-primary-200">
-        수출하고 싶은 품목을 견적과 함께 알려주세요. 바이어를 찾아드립니다.
+      <p className="mt-1 mb-12 text-lg font-bold text-primary-500 dark:text-primary-200">
+        <span className="text-primary-600 dark:text-primary-200 text-2xl">수출</span>하고 싶은 품목을 견적과 함께
+        알려주세요. <span className="text-primary-600 dark:text-primary-200 text-2xl">바이어</span>를 찾아드립니다.
       </p>
     </div>
     <ItemGrid

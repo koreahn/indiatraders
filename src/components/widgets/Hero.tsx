@@ -14,12 +14,12 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
               </p>
             )}
             {title && (
-              <h1 className="leading-tighter font-heading mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
+              <h1 className="leading-tighter font-heading mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-4xl">
                 {title}
               </h1>
             )}
             <div className="mx-auto max-w-3xl">
-              <p className="mt-2 mb-1 text-lg text-gray-600 dark:text-slate-400">
+              {/* <p className="mt-2 mb-1 text-lg text-gray-600 dark:text-slate-400">
                 인도로부터 저렴한 가격으로 원자재 및 식재료 수입
               </p>
               <p className="mt-1 mb-1 text-lg text-gray-600 dark:text-slate-400">
@@ -27,7 +27,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
               </p>
               <p className="mt-1 mb-5 text-lg text-gray-600 dark:text-slate-400">
                 인디아트레이더스와 함께 인도를 만나보세요
-              </p>
+              </p> */}
               {subtitle && (
                 <p className="mt-3 mb-3 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>
               )}
