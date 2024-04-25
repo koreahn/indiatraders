@@ -124,27 +124,28 @@ export const featuresHome: FeaturesProps = {
   },
   items: [
     {
-      title: '무역',
-      description: '가죽, 섬유 등 필요한 무엇이든 문의 주세요.',
+      title: '무역: 수출입',
+      description:
+        '수출수입제한 품목을 제외한 모든 물건에 대해 취급가능합니다.<br />대한민국처럼 3면이 바다로 둘러쌓여 랍스타, 타이거새우, 갑오징어, 넙치 등 기타 수산물이 풍부하며, 우리에게 잘 알려진 식재료인 커리를 포함한 각종 향신료 등이 풍부합니다.',
       icon: IconArrowsRightLeft,
       // callToAction: {
       //   text: 'Discover now',
       //   href: '/',
       // },
     },
+    // {
+    //   title: '식자재',
+    //   description: '향신료, 민물새우, 닭발 등 다양한 식자재를 합리적인 가격에 제공합니다.',
+    //   icon: IconMeat,
+    //   // callToAction: {
+    //   //   text: 'Discover now',
+    //   //   href: '/',
+    //   // },
+    // },
     {
-      title: '식자재',
-      description: '향신료, 민물새우, 닭발 등 다양한 식자재를 합리적인 가격에 제공합니다.',
-      icon: IconMeat,
-      // callToAction: {
-      //   text: 'Discover now',
-      //   href: '/',
-      // },
-    },
-    {
-      title: 'ODC',
+      title: 'ODC: IT 개발 아웃소싱',
       description:
-        '훌륭한 개발스킬과 합리적인 인건비를 통해 완성도 높은 결과물을 선보입니다. (모바일 앱, 전자상거래, 블로그, 개인 프로필, 스몰 비즈니스...)',
+        '합리적인 인건비로 뛰어난 개발자들과 함께 만족도 와 완성도 높은 제품을 만들어 보세요.<br />(특히 한국을 비롯한 세계를 무대로 하는 앱서비스 등의 최초 개발부터 유지보수까지 가장 합리적인 가격으로 가능. 아웃소싱 및 해외지점설립등 지원가능)',
       icon: IconKeyboard,
       // callToAction: {
       //   text: 'Discover now',
@@ -377,29 +378,29 @@ export const faqs2Home: FAQsProps = {
   },
   items: [
     {
-      title: '어떤 물건을 구할 수 있나요?',
-      description: `인도에서 구할 수 있는 모든것을 취급합니다.`,
+      title: '수출수입이 가능한 물건을 확인할 수 있나요?',
+      description: `예. 아래 문의를 통해 품목정보를 보내주시면, 수출입가능여부 및 CIF & FOB 시장평균 가격을 알려드립니다. 가장 궁금해하시는 가격정보를 가장 빨리 얻으실 수 있어 의사결정이 빨라집니다.`,
     },
     {
-      title: 'ODC 가 무엇인가요?',
-      description: `ODC 는 Offshore Development Center 의 약자로 해외 개발 센터를 의미합니다. 인도의 훌륭한 개발자와 함께 합리적인 가격에 제품 개발 및 유지보수를 제공합니다.`,
+      title: '물건을 수입하는 경우 샘플을 먼저 받아 볼 수 있나요?',
+      description: `가능하면 저희와 컨퍼런스콜을 통해 요구사항을 정리하고 찾으시는 물건이 확실한 경우에 인도로 방문을 해서 최종 확인을 하시는게 좋습니다. 현장에서 샘플을 얻는데에는 큰 문제가 없고, 상품에 따라 샘플을 발송해드릴 수 있습니다.`,
     },
     {
-      title: '질문?',
-      description: `답변.`,
+      title: 'IT개발 아웃소싱이 궁금합니다.',
+      description: `저희는 인도에 풍부한 IT개발리소스를 통해 다양한 국가로부터 IT개발 아웃소싱을 받아 제공한 경험이 있습니다. 신규제품 개발부터 유지보수까지 다양한 형태로의 아웃소싱이 가능하며, 한국대비 굉징하 저렴한 가격으로 이 모든것이 가능합니다. 문의 주시면 상담드리겠습니다.`,
     },
-    {
-      title: '질문?',
-      description: `답변.`,
-    },
-    {
-      title: '질문?',
-      description: `답변.`,
-    },
-    {
-      title: '질문?',
-      description: `답변.`,
-    },
+    // {
+    //   title: '질문?',
+    //   description: `답변.`,
+    // },
+    // {
+    //   title: '질문?',
+    //   description: `답변.`,
+    // },
+    // {
+    //   title: '질문?',
+    //   description: `답변.`,
+    // },
   ],
 };
 
@@ -624,7 +625,7 @@ export const contactHome: ContactProps = {
     },
     {
       title: '이메일',
-      description: ['Mail: koreahn@streettechbros.com'],
+      description: ['Mail: ddaolaw@gmail.com', 'Mail: koreahn.hoon@gmail.com'],
       icon: IconPhoneCall,
     },
     {

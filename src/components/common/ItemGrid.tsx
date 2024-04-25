@@ -24,10 +24,10 @@ const ItemGrid = ({
               (columns || defaultColumns) === 4
                 ? 'lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'
                 : (columns || defaultColumns) === 3
-                ? 'lg:grid-cols-3 sm:grid-cols-2'
-                : (columns || defaultColumns) === 2
-                ? 'sm:grid-cols-2'
-                : 'max-w-4xl'
+                  ? 'lg:grid-cols-3 sm:grid-cols-2'
+                  : (columns || defaultColumns) === 2
+                    ? 'sm:grid-cols-2'
+                    : 'max-w-4xl'
             }`,
             containerClass,
           )}
@@ -44,13 +44,36 @@ const ItemGrid = ({
                 </div>
                 <div className="mt-0.5">
                   {title && <h3 className={twMerge('text-xl font-bold', titleClass)}>{title}</h3>}
-                  {description && (
-                    <p
-                      className={twMerge(`text-gray-600 dark:text-slate-400 ${title ? 'mt-3' : ''}`, descriptionClass)}
-                    >
-                      {description}
-                    </p>
-                  )}
+                  {description &&
+                    (description.indexOf('<br />') ? (
+                      <>
+                        <p
+                          className={twMerge(
+                            `text-gray-600 dark:text-slate-400 ${title ? 'mt-3' : ''}`,
+                            descriptionClass,
+                          )}
+                        >
+                          {typeof description === 'string' ? description.split('<br />')[0] : description}
+                        </p>
+                        <p
+                          className={twMerge(
+                            `text-gray-600 dark:text-slate-400 ${title ? 'mt-3' : ''}`,
+                            descriptionClass,
+                          )}
+                        >
+                          {typeof description === 'string' ? description.split('<br />')[1] : description}
+                        </p>
+                      </>
+                    ) : (
+                      <p
+                        className={twMerge(
+                          `text-gray-600 dark:text-slate-400 ${title ? 'mt-3' : ''}`,
+                          descriptionClass,
+                        )}
+                      >
+                        {description}
+                      </p>
+                    ))}
                   {callToAction && (
                     <CTA
                       callToAction={callToAction}
